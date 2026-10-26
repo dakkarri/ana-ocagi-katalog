@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Ocağı Ev Yemekleri | Yozgat</title>
+<meta name="description" content="Yozgat Merkez'de günlük ev yemekleri ve tatlı siparişi. WhatsApp'tan sipariş verin.">
+<style>
+  :root{
+    --amber:#d97706;
+    --amber-soft:#fef3e2;
+    --amber-deep:#b45309;
+    --ink:#292524;
+    --muted:#78716c;
+    --line:#f0e7da;
+    --bg:#fffdf9;
+    --wa:#1faa53;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:560px;margin:0 auto;padding:0 18px}
+
+  /* HERO */
+  header{
+    background:
+      radial-gradient(circle at 85% 15%, rgba(217,119,6,.16), transparent 42%),
+      radial-gradient(circle at 10% 90%, rgba(180,83,9,.10), transparent 45%),
+      var(--amber-soft);
+    border-bottom:1px solid var(--line);
+    padding:44px 0 30px;
+    text-align:center;
+  }
+  .mark{
+    width:72px;height:72px;margin:0 auto 14px;border-radius:22px;
+    background:linear-gradient(140deg,var(--amber),var(--amber-deep));
+    color:#fff;display:flex;align-items:center;justify-content:center;
+    font-size:30px;font-weight:800;letter-spacing:.5px;
+    box-shadow:0 8px 20px rgba(180,83,9,.25);
+  }
+  h1{font-size:27px;font-weight:800;letter-spacing:-.3px}
+  .tagline{color:var(--muted);font-size:15px;margin-top:6px}
+  .meta{margin-top:18px;display:flex;flex-direction:column;gap:8px;font-size:14px}
+  .meta span{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:#44403c}
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none}
+
+  /* SECTION TITLES */
+  h2{
+    font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--amber-deep);margin:34px 0 14px;display:flex;align-items:center;gap:10px;
+  }
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  /* MENU CARDS */
+  .card{
+    display:flex;align-items:center;gap:14px;background:#fff;
+    border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:10px;
+    box-shadow:0 1px 3px rgba(41,37,36,.04);
+  }
+  .mono{
+    width:52px;height:52px;flex:none;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:19px;color:var(--amber-deep);
+    background:linear-gradient(150deg,var(--amber-soft),#fde8cd);
+    border:1px solid #f6e0bd;
+  }
+  .info{flex:1;min-width:0}
+  .name{font-weight:700;font-size:16px}
+  .desc{color:var(--muted);font-size:13.5px;margin-top:2px}
+  .price{font-weight:800;font-size:16px;color:var(--amber-deep);white-space:nowrap}
+
+  /* ORDER */
+  .order{
+    margin:38px 0 20px;text-align:center;background:var(--amber-soft);
+    border:1px solid #f6e0bd;border-radius:20px;padding:26px 20px;
+  }
+  .order p{color:#57534e;font-size:15px;margin-bottom:16px}
+  .wa-btn{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--wa);color:#fff;text-decoration:none;
+    font-size:17px;font-weight:700;padding:16px 22px;border-radius:14px;
+    box-shadow:0 6px 16px rgba(31,170,83,.3);
+  }
+  .wa-btn svg{flex:none}
+
+  footer{
+    text-align:center;color:var(--muted);font-size:13px;
+    padding:10px 0 96px;
+  }
+
+  /* sticky order bar on mobile */
+  .sticky-bar{
+    position:fixed;left:0;right:0;bottom:0;padding:12px 18px calc(12px + env(safe-area-inset-bottom));
+    background:rgba(255,253,249,.92);backdrop-filter:blur(8px);
+    border-top:1px solid var(--line);
+  }
+  .sticky-bar .wrap{padding:0}
+  .sticky-bar a{
+    display:flex;align-items:center;justify-content:center;gap:9px;max-width:560px;margin:0 auto;
+    background:var(--wa);color:#fff;text-decoration:none;font-weight:700;font-size:16px;
+    padding:14px;border-radius:12px;box-shadow:0 4px 14px rgba(31,170,83,.35);
+  }
+  @media (min-width:640px){ .sticky-bar{display:none} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mark">AO</div>
+    <h1>Ana Ocağı Ev Yemekleri</h1>
+    <p class="tagline">Yozgat'ta günlük, ev yapımı lezzetler</p>
+    <div class="meta">
+      <span><span class="dot"></span>Çapanoğlu Mah. Lise Cad. No:34, Merkez / Yozgat</span>
+      <span><span class="dot"></span>Pzt–Cmt 10:00–21:00 · Pazar 11:00–20:00</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h2>Çorbalar</h2>
+
+  <div class="card">
+    <div class="mono">MÇ</div>
+    <div class="info">
+      <div class="name">Mercimek Çorbası</div>
+      <div class="desc">Günlük pişirilir, limon ve kıtır ekmek ile</div>
+    </div>
+    <div class="price">₺70</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">EÇ</div>
+    <div class="info">
+      <div class="name">Ezogelin Çorbası</div>
+      <div class="desc">Bulgurlu, naneli, bol tereyağlı</div>
+    </div>
+    <div class="price">₺75</div>
+  </div>
+
+  <h2>Ana Yemekler</h2>
+
+  <div class="card">
+    <div class="mono">YT</div>
+    <div class="info">
+      <div class="name">Yozgat Tandır Kebabı</div>
+      <div class="desc">Odun ateşinde, pilav ve közlenmiş biber ile</div>
+    </div>
+    <div class="price">₺340</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">TK</div>
+    <div class="info">
+      <div class="name">Testi Kebabı</div>
+      <div class="desc">Kuzu etli, sebzeli; porsiyon</div>
+    </div>
+    <div class="price">₺320</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">EM</div>
+    <div class="info">
+      <div class="name">Ev Mantısı</div>
+      <div class="desc">El açması, sarımsaklı yoğurt ve kızgın tereyağı ile</div>
+    </div>
+    <div class="price">₺190</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">İK</div>
+    <div class="info">
+      <div class="name">İçli Köfte (5 adet)</div>
+      <div class="desc">Kıymalı, cevizli; kızartma veya haşlama</div>
+    </div>
+    <div class="price">₺160</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">YS</div>
+    <div class="info">
+      <div class="name">Zeytinyağlı Yaprak Sarması</div>
+      <div class="desc">500 g, limon ile servis edilir</div>
+    </div>
+    <div class="price">₺230</div>
+  </div>
+
+  <h2>Tatlılar</h2>
+
+  <div class="card">
+    <div class="mono">FS</div>
+    <div class="info">
+      <div class="name">Fırın Sütlaç</div>
+      <div class="desc">Güveçte, üzeri hafif yanık</div>
+    </div>
+    <div class="price">₺85</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">CB</div>
+    <div class="info">
+      <div class="name">Cevizli Ev Baklavası</div>
+      <div class="desc">1 kg tepsi, el açması yufka</div>
+    </div>
+    <div class="price">₺520</div>
+  </div>
+
+  <div class="card">
+    <div class="mono">TÇ</div>
+    <div class="info">
+      <div class="name">Tahinli Yozgat Çöreği</div>
+      <div class="desc">Günlük pişer, adet</div>
+    </div>
+    <div class="price">₺95</div>
+  </div>
+
+  <div class="order">
+    <p>Siparişlerinizi WhatsApp üzerinden alıyoruz. Günlük menü ve toplu sipariş için bize yazın.</p>
+    <a class="wa-btn" href="https://wa.me/905000000000?text=Merhaba%2C%20sipari%C5%9F%20vermek%20istiyorum.">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.2.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+      WhatsApp'tan Sipariş Ver
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Ana Ocağı Ev Yemekleri · Merkez / Yozgat<br>
+    Siparişler yalnızca WhatsApp üzerinden alınır.
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <div class="wrap">
+    <a href="https://wa.me/905000000000?text=Merhaba%2C%20sipari%C5%9F%20vermek%20istiyorum.">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.2.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+      WhatsApp'tan Sipariş Ver
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
